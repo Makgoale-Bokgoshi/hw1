@@ -19,7 +19,7 @@
 
 int cmd_quit(tok_t arg[]) {
   printf("Bye\n");
-  exit(0);
+  exit(0); 
   return 1;
 }
 
