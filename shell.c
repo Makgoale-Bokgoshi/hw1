@@ -25,7 +25,6 @@ int cmd_quit(tok_t arg[]) {
 
 int cmd_help(tok_t arg[]);
 
-
 int cmd_cd(tok_t arg[]){
   if(arg[0] == NULL) return 0;
   else
@@ -215,7 +214,6 @@ int shell (int argc, char *argv[]) {
   }
   lineNum++;
   wait(NULL);
-  
   fprintf(stdout, "%d: %s :", lineNum, getcwd(cwd,sizeof(cwd)));
   }
   return 0;
